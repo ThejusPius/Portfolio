@@ -302,7 +302,7 @@ span {
 
 /* Services Section Styling */
 .services {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 /* Section H2 Styling */
@@ -415,7 +415,7 @@ span {
 }
 
 .timeline-section{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     padding: 100px 15px;
  }
  .timeline-section h2{
@@ -499,7 +499,7 @@ span {
  }
 
  .contact{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
  }
  .contact h2{
     margin-bottom: 3rem;
@@ -520,7 +520,7 @@ span {
     padding: 2.5rem;
     font-size: 1.8rem;
     color:var(--text-color);
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
@@ -814,7 +814,7 @@ span {
             margin: 3rem 0;
         }
         .about img{
-            width:76vw;
+            width:75vw;
          }
          .about-content p {
             font-size: 1.6rem;
