@@ -58,18 +58,20 @@ body {
 /* Style the image inside the logo */
 .logo .logo-img {
     width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
     margin-right: 0.5rem; /* Reduced spacing between image and text */
     border-radius: 50%; /* Optional: make the image circular */
 }
 
 /* Adjust spacing between Thejus and Pius */
 .logo .logo-name {
+    
     margin-left: 0.5rem; /* Add space between Thejus and Pius */
+    
 }
 
 .navbar a {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     margin-left: 4rem;
     font-weight: 500;
@@ -92,18 +94,17 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 10rem;
+    padding: 5% 15%;
 }
 
 /* Video Background */
 .home {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 8rem;
-    padding-top: 15rem;
-    min-height: 100vh;
+    justify-content: center;
+    gap: 2em;
+    
 }
 
 #background-video {
@@ -125,26 +126,33 @@ span {
 }
 
 /* Home content styling */
-.home-content {
-    z-index: 1; /* Ensures content is in front of the video */
+.home img {
+    width: 10vw;
+    border-radius: 50%;
+    margin-top: 7em;
+}
+.home img:hover {
+    box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+}
+
+.info-box{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
 }
-
-.home-content h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.home-content h4 {
-    font-size: 2rem;
+.info-box h1{
+    font-size: 4.5em;
     font-weight: 500;
 }
-
-.home-img {
-    border-radius: 50%;
+.info-box h3{
+    font-size: 1.8em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+    
 }
 
 .home-img img {
@@ -172,8 +180,8 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.7rem;
+    height: 2.7rem;
     background: transparent;
     border: 0.2rem solid var(--main-color);
     font-size: 1.5rem;
@@ -193,7 +201,7 @@ span {
 /* Button */
 .btn {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 0.6rem 2.3rem;
     background: var(--bg-color);
     border-radius: 4rem;
     font-size: 1.5rem;
@@ -299,8 +307,12 @@ span {
     gap: 5rem;
   }
 .about img{
-    width: 23vw;
-    border-radius: 7em;
+    width: 17vw;
+    
+    border-radius: 15em;
+}
+.about img:hover {
+    box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
   
   .about-box{
@@ -312,11 +324,11 @@ span {
   }
   
   .about-box h1{
-    font-size: 5em;
+    font-size: 4em;
   }
   
   .about-box p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: white;
     opacity: 0.8;
@@ -330,7 +342,7 @@ span {
   }
   
   .skills ul{
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -355,10 +367,10 @@ span {
     transform: translateX(10px);
   }
   .skills ul li i{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .about-box h2{
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
 
@@ -366,7 +378,7 @@ span {
 /* Services Section Heading */
 .heading {
     text-align: center;
-    font-size: 6rem; /* Adjust font size for larger screens */
+    font-size: 5rem; /* Adjust font size for larger screens */
 }
 
 /* Services Section Styling */
@@ -376,7 +388,7 @@ span {
 
 /* Section H2 Styling */
 .services h2 {
-    margin-bottom: 8rem; /* Margin for larger screens */
+    margin-bottom: 7rem; /* Margin for larger screens */
 }
 
 /* Service Container Flexbox Layout */
@@ -421,19 +433,19 @@ span {
 
 /* Icon Styling in Service Box */
 .services-box i {
-    font-size: 6rem; /* Icon size for larger screens */
+    font-size: 5rem; /* Icon size for larger screens */
     color: var(--main-color);
     margin-bottom: 1rem;
 }
 
 /* Title H3 Styling in Service Box */
 .services-box h3 {
-    font-size: 2.3rem; /* Font size for larger screens */
+    font-size: 2.2rem; /* Font size for larger screens */
 }
 
 /* Subheading H4 Styling in Service Box */
 .services-box h4 {
-    font-size: 2rem; /* Font size for larger screens */
+    font-size: 1.8rem; /* Font size for larger screens */
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -573,7 +585,7 @@ span {
  .contact h2{
     margin-bottom: 3rem;
     color: var(--text-color);
-    font-size: 5rem;
+    font-size: 4.9rem;
  }
  .contact form{
     display: flex;
@@ -695,20 +707,16 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
+    .home h1{
+        font-size: 4em;
     }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
+     .home h3{
+        font-size: 2em;
+     }
+     .home img{
+        width: 34vw;
+     }
+    
     .services-box{
         margin: 0 5rem;
     }
@@ -795,6 +803,7 @@ span {
 }
 
 .skills ul {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -805,6 +814,7 @@ span {
 }
 
 .skills ul li {
+    
     font-size: 1.8rem;
     width: 100%;
     padding-left: 1rem;
@@ -882,9 +892,13 @@ span {
     }
 
     .services-box p {
-        font-size: 1.2rem; /* Further reduce font size */
-        margin: 0.5rem 0 1rem; /* Adjust margin */
+        text-align: justify; /* Or use 'left' if you prefer that */
+        padding: 0;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 0.5rem 0 1rem;
     }
+}
 
     .services-box .btn {
         font-size: 1.2rem; /* Further reduce font size */
@@ -936,19 +950,19 @@ span {
             margin-left: 0.5rem; /* Add space between Thejus and Pius */
         }
         .home{
-            flex-direction: column-reverse;
-            margin: 5rem 0;
+            flex-direction: column;
+            margin: 3rem 0;
             gap: 5rem;
         }
         .home-content {
             align-items: center;
             text-align: center;
         }
-        .home-content h1{
-            font-size: 3.2rem;
+        .home  h1{
+            font-size: 3.5rem;
         }
-        .home-content h4{
-            font-size: 1.6rem;
+        .home h3{
+            font-size: 1.8rem;
 
         }
        
@@ -956,9 +970,9 @@ span {
             font-size: 1.5rem;
         }
         
-        .home-img img{
+        .home img{
             margin-top: 3px;
-            width: 76vw;
+            width: 34vw;
             
         }
         .social-icons a{
@@ -968,6 +982,7 @@ span {
             padding-bottom: 20px;
         }
         .btn{
+            
             font-size: 1.3rem;
         }
 
@@ -995,5 +1010,13 @@ span {
          .contact form{
             flex-direction: column;
          }
+        }
+
+        @media(max-width:968px){
+
+        }
+
+        @media(max-width:768px){
+
         }
  
